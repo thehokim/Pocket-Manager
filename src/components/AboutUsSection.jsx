@@ -2,7 +2,7 @@ import React from "react";
 import Tree from "../../public/money-tree.svg";
 import Analytics from "../../public/analytics.svg";
 import Chat from "../../public/chat-ai.svg";
-import Utils from "../../public/Utilities.svg";
+import Utils from "../../public/utilities.svg";
 import Saving from "../../public/savings.svg";
 
 const AboutUsSection = () => {
@@ -11,7 +11,7 @@ const AboutUsSection = () => {
       {/* Заголовок */}
       <div className="mb-10">
         {/* Заголовок на десктопе */}
-        <div className="hidden md:flex text-black md:text-[123px] font-bold items-center justify-center">
+        <div className="hidden md:flex text-black md:text-[123px] xl:text-[230px] font-bold items-center justify-center">
           <span>T US</span>
           <img src={Tree} alt="Money tree icon" className="mx-8" />
           <span>ABOUT US</span>

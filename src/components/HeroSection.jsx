@@ -30,7 +30,7 @@ const HeroSection = () => {
           </p>
 
           {/* Кнопки магазинов + информация о пользователях */}
-          <div className="flex relative flex-wrap items-center justify-center gap-4">
+          <div className="flex relative flex-wrap items-center justify-center 2xl:justify-start  gap-4">
             {/* Кнопка Google Play */}
             <div className="flex sm:flex-row items-center justify-center md:justify-start gap-4 relative z-10">
               {/* Google Play */}
@@ -145,19 +145,19 @@ const HeroSection = () => {
             <img
               src="/phone1.png"
               alt="Phone 1"
-              className="hidden md:block absolute -top-16 -left-52 w-[620px] z-20"
+              className="hidden md:block absolute -top-16 -left-52 w-[620px] lg:w-[750px] z-20"
             />
             {/* Центральный (основной) телефон */}
             <img
               src="/phone2.png"
               alt="Phone 2"
-              className="hidden md:block absolute top-8 left-0 w-[518px]  z-10"
+              className="hidden md:block absolute top-8 left-0 lg:left-10 w-[518px] lg:w-[650px] z-10"
             />
             {/* Правый (слегка повернутый) телефон */}
             <img
               src="/phone3.png"
               alt="Phone 3"
-              className="hidden md:block absolute top-28 right-16 w-[498px] z-5"
+              className="hidden md:block absolute top-28 lg:top-40 right-16 xl:right-[400px] lg:right-[450px] w-[498px] lg:w-[590px] z-5"
             />
           </div>
         </div>
