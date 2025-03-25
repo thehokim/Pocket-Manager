@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 const testimonials = [
   {
@@ -32,19 +32,36 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const sliderRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(1); // Gabriel по умолчанию
+  const [activeIndex, setActiveIndex] = useState(1); // по умолчанию вторая карточка (Gabriel)
 
+  // Прокрутка по клику на индикатор
   const scrollToIndex = (index) => {
     const container = sliderRef.current;
     const child = container.children[index];
     if (child) {
       container.scrollTo({
-        left: child.offsetLeft - 16, // учитываем padding
+        left: child.offsetLeft - 16, // с учётом gap
         behavior: "smooth",
       });
       setActiveIndex(index);
     }
   };
+
+  // Отслеживание активной карточки при скролле
+  useEffect(() => {
+    const container = sliderRef.current;
+
+    const handleScroll = () => {
+      if (!container) return;
+      const scrollLeft = container.scrollLeft;
+      const childWidth = container.children[0].offsetWidth + 16; // ширина + gap (gap-4 = 1rem = 16px)
+      const index = Math.round(scrollLeft / childWidth);
+      setActiveIndex(index);
+    };
+
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <section id="reviews" className="py-4 bg-[#f1f1f1]">
