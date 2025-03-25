@@ -8,7 +8,7 @@ const StatisticsSection = () => {
   ];
 
   return (
-    <section className="bg-[#f1f1f1] px-6 md:py-6">
+    <section id="statistics" className="bg-[#f1f1f1] px-6 md:py-6">
       <div
         className="relative rounded-4xl p-6 md:p-12 mx-auto overflow-hidden bg-no-repeat bg-cover bg-black"
         style={{

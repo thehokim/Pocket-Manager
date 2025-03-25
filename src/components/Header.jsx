@@ -9,13 +9,12 @@ const Header = () => {
       </div>
       <nav className="hidden md:flex gap-8 text-gray-200 text-sm font-light">
         <a href="#home" className="hover:text-white transition">Home</a>
-        <a href="#about" className="hover:text-white transition">About Us</a>
         <a href="#reviews" className="hover:text-white transition">Reviews</a>
         <a href="#statistics" className="hover:text-white transition">Statistic</a>
         <a href="#premium" className="hover:text-white transition">Premium</a>
         <a href="#faq" className="hover:text-white transition">FAQ</a>
-        <a href="#contact" className="hover:text-white transition">Contact Us</a>
-      </nav>
+        <a href="mailto:support@helperg.com" className="hover:text-white transition">Contact Us</a>
+        </nav>
     </header>
   );
 };
