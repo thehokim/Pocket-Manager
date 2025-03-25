@@ -73,8 +73,8 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
-                  className="hover:text-gray-300 transition-colors"
+                  href="mailto:support@helperg.com"
+                  className="hover:text-white transition"
                 >
                   Contact Us
                 </a>
@@ -95,7 +95,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-              <Link
+                <Link
                   to="/service"
                   className="hover:text-gray-300 transition-colors"
                 >
