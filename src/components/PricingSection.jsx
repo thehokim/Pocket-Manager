@@ -6,13 +6,24 @@ const PricingSection = () => {
   return (
     <section id="premium" className="py-4 md:py-8 bg-[#f1f1f1]">
       {/* Заголовок */}
-      <div className="hidden md:flex text-black md:text-[117px] xl:text-[195px] lg:text-[150px] font-bold items-center justify-center">
-        <span>AN</span>
-        <img src={Tree} alt="Money tree icon" className="mx-8 h-52" />
-        <span>PREMIUM PLAN</span>
-        <img src={Tree} alt="Money tree icon" className="mx-8 h-52" />
-        <span>PR</span>
-      </div>
+      <div
+                className="hidden md:flex 
+                      flex-nowrap 
+                      items-center 
+                      justify-center 
+                      whitespace-nowrap 
+                      text-black 
+                      md:text-[123px] 
+                      xl:text-[150px] 
+                      font-bold 
+                      gap-8"
+              >
+                <span>AN</span>
+                <img src={Tree} alt="Money tree icon" className="h-52" />
+                <span>PREMIUM PLAN</span>
+                <img src={Tree} alt="Money tree icon" className="h-52" />
+                <span>PR</span>
+              </div>
 
       <div className="flex md:hidden justify-center items-center gap-2 mb-4">
         <img src={Tree} alt="Money tree icon" className="w-10 h-10" />
@@ -24,9 +35,9 @@ const PricingSection = () => {
 
       {/* Карточки */}
       <div className="px-4 md:px-6">
-        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 xl:space-x-52 justify-center items-center">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 xl:space-x-36 justify-center items-center">
           {/* FREE PLAN */}
-          <div className="w-full md:w-[440px] xl:w-[440px] xl:h-[600px] bg-white rounded-2xl p-6">
+          <div className="w-full md:w-[440px] xl:w-[440px] xl:h-[640px] bg-white rounded-2xl p-6">
             <p className="font-semibold text-lg">Pay monthly</p>
             <p className="text-4xl">
               $0/<span className="text-2xl">mo</span>
@@ -86,9 +97,11 @@ const PricingSection = () => {
               </div>
             </div>
             <div className="mt-6 xl:mt-32 flex justify-center">
-              <button className="px-10 py-3 bg-[#41FDA8] rounded-2xl font-semibold text-black">
-                Get Started
-              </button>
+            <a href="#home">
+                <button className="px-10 py-3 bg-[#41FDA8] rounded-2xl font-semibold text-black pb-3">
+                  Get Started
+                </button>
+              </a>
             </div>
           </div>
 
@@ -116,10 +129,12 @@ const PricingSection = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-6 xl:mt-24 flex justify-center">
-              <button className="px-10 py-3 bg-[#41FDA8] rounded-2xl font-semibold text-black">
-                Get Started
-              </button>
+            <div className="mt-6 xl:mt-[70px] flex justify-center">
+              <a href="#home">
+                <button className="px-10 py-3 bg-[#41FDA8] rounded-2xl font-semibold text-black pb-3">
+                  Get Started
+                </button>
+              </a>
             </div>
           </div>
         </div>

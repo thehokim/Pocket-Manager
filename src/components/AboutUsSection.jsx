@@ -11,18 +11,32 @@ const AboutUsSection = () => {
       {/* Заголовок */}
       <div className="mb-10">
         {/* Заголовок на десктопе */}
-        <div className="hidden md:flex text-black md:text-[123px] xl:text-[205px] font-bold items-center justify-center">
+        {/* Desktop version */}
+        <div
+          className="hidden md:flex 
+                flex-nowrap 
+                items-center 
+                justify-center 
+                whitespace-nowrap 
+                text-black 
+                md:text-[123px] 
+                xl:text-[205px] 
+                font-bold 
+                gap-8"
+        >
           <span>T US</span>
-          <img src={Tree} alt="Money tree icon" className="mx-8 h-52" />
+          <img src={Tree} alt="Money tree icon" className="h-52" />
           <span>ABOUT US</span>
-          <img src={Tree} alt="Money tree icon" className="mx-8 h-52" />
+          <img src={Tree} alt="Money tree icon" className="h-52" />
           <span>ABO</span>
         </div>
 
         {/* Заголовок на мобилке */}
         <div className="flex md:hidden justify-center items-center gap-4">
           <img src={Tree} alt="Money tree icon" className="w-10 h-10" />
-          <h2 className="text-4xl font-extrabold text-center text-black">ABOUT US</h2>
+          <h2 className="text-4xl font-extrabold text-center text-black">
+            ABOUT US
+          </h2>
           <img src={Tree} alt="Money tree icon" className="w-10 h-10" />
         </div>
       </div>
@@ -51,19 +65,24 @@ const AboutUsSection = () => {
 
         {/* Utility Bill Card */}
         <div className="bg-white rounded-xl p-6 flex flex-col h-full md:row-span-2">
-  {/* Иконка всегда сверху */}
-  <img src={Utils} alt="Utilities icon" className="h-14 self-start mb-4" />
+          {/* Иконка всегда сверху */}
+          <img
+            src={Utils}
+            alt="Utilities icon"
+            className="h-14 self-start mb-4"
+          />
 
-  {/* Контент прижат вниз только на md+ */}
-  <div className="md:mt-auto">
-    <h2 className="text-4xl font-bold mb-3">Utility bill calculation</h2>
-    <p className="text-gray-700">
-      Easily calculate and track utility costs such as electricity, water,
-      gas, etc. with automatic payment reminders.
-    </p>
-  </div>
-</div>
-
+          {/* Контент прижат вниз только на md+ */}
+          <div className="md:mt-auto">
+            <h2 className="text-4xl font-bold mb-3">
+              Utility bill calculation
+            </h2>
+            <p className="text-gray-700">
+              Easily calculate and track utility costs such as electricity,
+              water, gas, etc. with automatic payment reminders.
+            </p>
+          </div>
+        </div>
 
         {/* Savings Goals Card */}
         <div className="bg-white rounded-xl p-6 flex flex-col h-full md:col-span-2 lg:col-span-2">
