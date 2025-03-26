@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-
+import STAR from "../../public/Star 2.svg";
+ 
 const testimonials = [
   {
     avatar: "/user4.png",
@@ -47,6 +48,10 @@ const TestimonialsSection = () => {
     }
   };
 
+  useEffect(() => {
+    scrollToIndex(1);
+  }, []);
+  
   // Отслеживание активной карточки при скролле
   useEffect(() => {
     const container = sliderRef.current;
@@ -65,7 +70,7 @@ const TestimonialsSection = () => {
 
   return (
     <section id="reviews" className="py-4 bg-[#f1f1f1]">
-      <div className="mx-auto px-6 max-w-7xl">
+      <div className="mx-auto px-6 ">
         {/* Заголовок */}
         <h2 className="text-start text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-12">
           What do our users say?
@@ -97,7 +102,9 @@ const TestimonialsSection = () => {
                 </p>
                 <div className="flex mt-1 mb-1">
                   {Array.from({ length: item.rating }).map((_, i) => (
-                    <span key={i} className="text-green-500 text-lg mr-1">★</span>
+                    <span key={i} className="text-green-500 text-lg mr-1">
+                      <img src={STAR} alt="" />
+                    </span>
                   ))}
                 </div>
                 <h4 className="text-lg font-semibold mb-2 text-center break-words">
@@ -112,10 +119,10 @@ const TestimonialsSection = () => {
         </div>
 
         {/* === Мобильная версия === */}
-        <div className="md:hidden overflow-x-auto no-scrollbar">
+        <div className="md:hidden overflow-x-auto no-scrollbar -mx-6">
           <div
             ref={sliderRef}
-            className="flex gap-4 px-2 scroll-smooth snap-x snap-mandatory overflow-x-auto"
+            className="flex gap-4 px-0 scroll-smooth snap-x snap-mandatory overflow-x-auto"
           >
             {testimonials.map((item, idx) => (
               <div
@@ -139,7 +146,9 @@ const TestimonialsSection = () => {
                 </p>
                 <div className="flex justify-center mt-1 mb-1">
                   {Array.from({ length: item.rating }).map((_, i) => (
-                    <span key={i} className="text-green-500 text-sm mr-0.5">★</span>
+                    <span key={i} className="text-green-500 text-sm mr-0.5">
+                      <img src={STAR} alt="" />
+                    </span>
                   ))}
                 </div>
                 <h4 className="text-xs font-semibold text-center mb-1 break-words">

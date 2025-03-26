@@ -6,11 +6,11 @@ const PricingSection = () => {
   return (
     <section id="premium" className="py-4 md:py-8 bg-[#f1f1f1]">
       {/* Заголовок */}
-      <div className="hidden md:flex text-black md:text-[117px] font-bold items-center justify-center">
+      <div className="hidden md:flex text-black md:text-[117px] xl:text-[195px] lg:text-[150px] font-bold items-center justify-center">
         <span>AN</span>
-        <img src={Tree} alt="Money tree icon" className="mx-8" />
+        <img src={Tree} alt="Money tree icon" className="mx-8 h-52" />
         <span>PREMIUM PLAN</span>
-        <img src={Tree} alt="Money tree icon" className="mx-8" />
+        <img src={Tree} alt="Money tree icon" className="mx-8 h-52" />
         <span>PR</span>
       </div>
 
@@ -24,9 +24,9 @@ const PricingSection = () => {
 
       {/* Карточки */}
       <div className="px-4 md:px-6">
-        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 justify-center items-center">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 xl:space-x-52 justify-center items-center">
           {/* FREE PLAN */}
-          <div className="w-full md:w-[440px] bg-white rounded-2xl p-6">
+          <div className="w-full md:w-[440px] xl:w-[440px] xl:h-[600px] bg-white rounded-2xl p-6">
             <p className="font-semibold text-lg">Pay monthly</p>
             <p className="text-4xl">
               $0/<span className="text-2xl">mo</span>
@@ -58,7 +58,7 @@ const PricingSection = () => {
           </div>
 
           {/* YEARLY PLAN */}
-          <div className="w-full md:w-[464px] bg-[#1a1a1a] text-white rounded-2xl p-6 relative">
+          <div className="w-full md:w-[464px] xl:h-[740px] bg-[#1a1a1a] text-white rounded-2xl p-6 relative">
             <div className="px-3 py-0.5 rounded-full bg-[#41FDA8] absolute right-5 text-black text-sm">
               Save 50%
             </div>
@@ -85,7 +85,7 @@ const PricingSection = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-6 flex justify-center">
+            <div className="mt-6 xl:mt-32 flex justify-center">
               <button className="px-10 py-3 bg-[#41FDA8] rounded-2xl font-semibold text-black">
                 Get Started
               </button>
@@ -93,7 +93,7 @@ const PricingSection = () => {
           </div>
 
           {/* MONTHLY PAID PLAN */}
-          <div className="w-full md:w-[440px] bg-white rounded-2xl p-6">
+          <div className="w-full md:w-[440px] xl:h-[640px] bg-white rounded-2xl p-6">
             <p className="font-semibold text-lg">Pay monthly</p>
             <p className="text-4xl">
               $9.99/<span className="text-2xl">mo</span>
@@ -116,7 +116,7 @@ const PricingSection = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-6 flex justify-center">
+            <div className="mt-6 xl:mt-24 flex justify-center">
               <button className="px-10 py-3 bg-[#41FDA8] rounded-2xl font-semibold text-black">
                 Get Started
               </button>

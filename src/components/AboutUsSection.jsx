@@ -11,11 +11,11 @@ const AboutUsSection = () => {
       {/* Заголовок */}
       <div className="mb-10">
         {/* Заголовок на десктопе */}
-        <div className="hidden md:flex text-black md:text-[123px] xl:text-[230px] font-bold items-center justify-center">
+        <div className="hidden md:flex text-black md:text-[123px] xl:text-[205px] font-bold items-center justify-center">
           <span>T US</span>
-          <img src={Tree} alt="Money tree icon" className="mx-8" />
+          <img src={Tree} alt="Money tree icon" className="mx-8 h-52" />
           <span>ABOUT US</span>
-          <img src={Tree} alt="Money tree icon" className="mx-8" />
+          <img src={Tree} alt="Money tree icon" className="mx-8 h-52" />
           <span>ABO</span>
         </div>
 
