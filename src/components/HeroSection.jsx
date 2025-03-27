@@ -157,7 +157,7 @@ const HeroSection = () => {
             <img
               src="/phone3.png"
               alt="Phone 3"
-              className="hidden md:block absolute top-28 lg:top-40 right-16 xl:right-[400px] lg:right-[450px] w-[498px] lg:w-[590px] z-5"
+              className="hidden md:block absolute top-28 lg:top-40 right-16 xl:right-42 lg:right-[450px] w-[498px] lg:w-[590px] z-5"
             />
           </div>
         </div>
