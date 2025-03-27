@@ -1,7 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React  from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handlePrivacyPolicyClick = () => {
+    navigate("/privacy-policy");
+  };
+
+  const handleServiceClick = () => {
+    navigate("/service");
+  };
+
   return (
     <div className="p-6 bg-[#f1f1f1]">
       <div
@@ -86,21 +96,21 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Terms & Policies</h4>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/privacy-policy"
+               <li>
+                <button
+                  onClick={handlePrivacyPolicyClick}
                   className="hover:text-gray-300 transition-colors"
                 >
                   Privacy Policy
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  to="/service"
+                <button
+                  onClick={handleServiceClick}
                   className="hover:text-gray-300 transition-colors"
                 >
                   Terms of Service
-                </Link>
+                </button>
               </li>
             </ul>
           </div>

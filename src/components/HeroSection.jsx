@@ -9,7 +9,7 @@ const HeroSection = () => {
     >
       <div className="px-6 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center justify-between">
         {/* ЛЕВАЯ ЧАСТЬ: Заголовок, текст, кнопки, пользователи */}
-        <div className="md:w-1/2 mt-10 md:mt-80 text-white space-y-6 text-start md:text-left">
+        <div className="md:w-1/2 mt-10 md:mt-80 text-white space-y-6 text-start md:text-left z-10">
           <h1 className="text-5xl font-light sm:text-5xl md:text-6xl lg:text-7xl lg:font-semibold leading-snug">
             Take{" "}
             <span className="bg-gradient-to-r from-[#9DCCDA] to-[#41FDA8] bg-clip-text text-transparent">
@@ -142,23 +142,24 @@ const HeroSection = () => {
               (скрываем их на мобильных через hidden md:block)
             */}
             {/* Левый (слегка повернутый) телефон */}
-            <img
+            {/* <img
               src="/phone1.png"
               alt="Phone 1"
               className="hidden md:block absolute -top-16 -left-52 w-[620px] lg:w-[750px] z-20"
             />
-            {/* Центральный (основной) телефон */}
             <img
               src="/phone2.png"
               alt="Phone 2"
               className="hidden md:block absolute top-8 left-0 lg:left-10 w-[518px] lg:w-[650px] z-10"
             />
-            {/* Правый (слегка повернутый) телефон */}
             <img
               src="/phone3.png"
               alt="Phone 3"
               className="hidden md:block absolute top-28 lg:top-40 right-16 xl:right-42 lg:right-[450px] w-[498px] lg:w-[590px] z-5"
-            />
+            /> */}
+            <div className=" absolute w-[704px] h-[415px]  hidden md:block right-[0px] md:-top-32 lg:top-0 lg:w-[800px] lg:h-[500px] xl:w-[1150px] xl:h-[500px] xl:-right-52 2xl:w-[1200px]">  
+            <img src="/group.png" alt="phone" />
+            </div>
           </div>
         </div>
       </div>

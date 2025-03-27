@@ -66,10 +66,17 @@ const PricingSection = () => {
                 </p>
               ))}
             </div>
+            <div className="mt-6 xl:mt-[70px] flex justify-center">
+              <a href="#home">
+                <button className="px-10 py-3  rounded-2xl font-semibold text-black pb-3">
+                  {/* Get Started */}
+                </button>
+              </a>
+            </div>
           </div>
 
           {/* YEARLY PLAN */}
-          <div className="w-full md:w-[464px] xl:h-[740px] bg-[#1a1a1a] text-white rounded-2xl p-6 relative">
+          <div className="w-full md:w-[464px] lg:h-[680px] xl:h-[740px]   bg-[#1a1a1a] text-white rounded-2xl p-6 relative">
             <div className="px-3 py-0.5 rounded-full bg-[#41FDA8] absolute right-5 text-black text-sm">
               Save 50%
             </div>
@@ -96,7 +103,7 @@ const PricingSection = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-6 xl:mt-32 flex justify-center">
+            <div className="mt-28 md:mt-12 lg:mt-10 xl:mt-20 2xl:mt-40 flex justify-center">
             <a href="#home">
                 <button className="px-10 py-3 bg-[#41FDA8] rounded-2xl font-semibold text-black pb-3">
                   Get Started
@@ -129,7 +136,7 @@ const PricingSection = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-6 xl:mt-[70px] flex justify-center">
+            <div className="mt-6 xl:mt-6 2xl:mt-20 flex justify-center">
               <a href="#home">
                 <button className="px-10 py-3 bg-[#41FDA8] rounded-2xl font-semibold text-black pb-3">
                   Get Started
