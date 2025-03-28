@@ -157,8 +157,8 @@ const HeroSection = () => {
               alt="Phone 3"
               className="hidden md:block absolute top-28 lg:top-40 right-16 xl:right-42 lg:right-[450px] w-[498px] lg:w-[590px] z-5"
             /> */}
-            <div className=" absolute w-[704px] h-[415px]  hidden md:block right-[0px] md:-top-32 lg:top-0 lg:w-[800px] lg:h-[500px] xl:w-[950px] xl:h-[500px] xl:-right-52 2xl:w-[1200px]">  
-            <img src="/group.png" alt="phone" /> 
+            <div className=" absolute w-[704px] h-[415px]  hidden md:block right-[0px] md:-top-32 lg:top-0 lg:w-[800px] lg:h-[500px] xl:w-[900px] 2xl:-right-52 2xl:w-[1200px] ">  
+            <img src="/group.png" alt="phone" className="2xl:h-[800px]"/> 
             {/* xl:w-[1100px] check*/}
             </div>
           </div>
